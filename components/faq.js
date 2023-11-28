@@ -12,7 +12,7 @@ const Faq = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-[#0A0A0B] dark:text-gray-200">
                     <span>{item.question}</span>
                     <ChevronUpIcon
                       className={`${
@@ -35,22 +35,22 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "What services does your agency offer?",
+    answer: "We offer a variety of software development services, including web, mobile, and custom application development.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Do you have experience in my industry?",
+    answer: "We have experience in a wide range of industries. Please contact us to discuss your specific needs.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "How is communication handled during a project?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "We believe in open and regular communication with our clients. We use a variety of communication tools to keep our clients informed about the progress of the project.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Do you offer technical support after project completion?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Yes, we offer technical support after project completion. Please contact us to discuss the details of our technical support.",
   },
 ];
 
