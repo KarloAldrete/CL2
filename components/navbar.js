@@ -15,7 +15,6 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
@@ -23,78 +22,39 @@ const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <Image
-                        src="/img/logo.svg"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
-                      />
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.60954 16.0199L12.2684 11.361L8.46367 7.55627L0 16.0199L5.22018 21.2401C5.21575 21.3 5.21131 21.3599 5.21131 21.4198V24.1708C5.21131 25.6173 6.38269 26.7887 7.82917 26.7887H10.5801C10.64 26.7887 10.6999 26.7842 10.7598 26.7798L15.98 32L21.3067 26.6733L17.5019 22.8685L15.98 24.3904L7.60954 16.0199Z" fill="url(#paint0_linear_40_280)" />
+                        <path d="M24.1731 5.21131H21.4221C21.3622 5.21131 21.3023 5.21575 21.2424 5.22019L16.0222 0L10.6956 5.32668L14.5003 9.13144L16.0222 7.60954L24.3927 15.98L19.7338 20.6389L23.5386 24.4437L32.0023 15.98L26.7821 10.7598C26.7865 10.6999 26.7909 10.64 26.7909 10.5801V7.82917C26.7909 6.38269 25.6196 5.21131 24.1731 5.21131Z" fill="url(#paint1_linear_40_280)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_40_280" x1="17.8823" y1="26.5629" x2="2.39421" y2="11.0748" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00BFFF" />
+                            <stop offset="0.458333" stop-color="#824AFB" />
+                            <stop offset="0.911458" stop-color="#D600F9" />
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_40_280" x1="28.5779" y1="19.0066" x2="13.0898" y2="3.51853" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00BFFF" />
+                            <stop offset="0.458333" stop-color="#824AFB" />
+                            <stop offset="0.911458" stop-color="#D600F9" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
                     </span>
-                    <span>Nextly</span>
+                    <span>CoderLabs</span>
                   </span>
                 </Link>
-
-                <Disclosure.Button
-                  aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
-                  <svg
-                    className="w-6 h-6 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    {open && (
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                      />
-                    )}
-                    {!open && (
-                      <path
-                        fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    )}
-                  </svg>
-                </Disclosure.Button>
-
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-                          {item}
-                      </Link>
-                    ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
-                    </Link>
-                  </>
-                </Disclosure.Panel>
               </div>
             </>
           )}
         </Disclosure>
 
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                    {menu}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+          <Link href="/" className="px-6 py-2 text-white bg-indigo-500 rounded-md md:ml-5">
+            Contact
           </Link>
 
           <ThemeChanger />
         </div>
+
       </nav>
     </div>
   );

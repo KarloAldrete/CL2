@@ -11,50 +11,49 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Solutions and services",
+  desc: "We help with outdated software, inefficient processes, and turning ideas into reality using the latest technologies for high-quality, scalable, and secure solutions.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Software Development",
+      desc: "We build custom software tailored to your business needs.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "UX/UI",
+      desc: "We design intuitive and engaging user interfaces.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Consulting",
+      desc: "We provide expert advice to optimize your IT strategy.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Innovative solutions",
+  desc: "We offer innovative solutions to help you stay ahead in the digital world.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Mobile Responsive Design",
+      desc: "Our designs are mobile responsive, ensuring a seamless experience across devices.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Latest Technologies",
+      desc: "We use the latest technologies to deliver high-quality solutions.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Customer Satisfaction",
+      desc: "We strive for 100% customer satisfaction.",
       icon: <SunIcon />,
     },
   ],
 };
-
 
 export {benefitOne, benefitTwo};
