@@ -58,7 +58,7 @@ export default function Hero() {
 
       <div className='flex flex-col items-center justify-center gap-4 z-[-1] mt-16'>
         <h1 className="text-center uppercase">Construimos soluciones <br /> web a tu medida</h1>
-        <p className='sm:text-base md:text-xl text-center w-full font-light sm:w-[55%]'>Transformamos tus ideas en aplicaciones web robustas y escalables para empresas de todos los tamaños, <span className='text-coder-green'>hacemos que la tecnología trabaje para ti</span></p>
+        <p className='sm:text-base md:text-xl text-center w-full font-light sm:w-[55%] md:w-[60%]'>Transformamos tus ideas en aplicaciones web robustas y escalables para empresas de todos los tamaños, <span className='text-coder-green'>hacemos que la tecnología trabaje para ti</span></p>
 
         <div className='flex flex-col md:flex-row gap-4 mt-11'>
           

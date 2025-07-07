@@ -29,7 +29,7 @@ const Header = () => {
                     <a href="#">Casos de Estudio</a>
                     <a href="#">Videos</a>
                     {/* <a href="#" className='py-2 px-6 bg-coder-green rounded-md text-black'>Contacto</a> */}
-                    <Button title='Contacto' buttonStyle='solid' href='#' sizeText='smallText' />
+                    <Button title='Contacto' buttonStyle='solid' href='#' sizeText='small' />
                 </nav>
             </div>
 
@@ -44,7 +44,7 @@ const Header = () => {
                     <a href="#" onClick={toggleMenu}>Casos de Estudio</a>
                     <a href="#" onClick={toggleMenu}>Videos</a>
                     {/* <a href="#" className='py-2 px-6 bg-coder-green rounded-md text-black' onClick={toggleMenu}>Contacto</a> */}
-                    <Button title='Contacto' buttonStyle='outlined' href='#' sizeText='smallText' />
+                    <Button title='Contacto' buttonStyle='outlined' href='#' sizeText='small' />
                 </nav>
             </div>
         </header>

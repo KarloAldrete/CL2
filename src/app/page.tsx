@@ -184,6 +184,7 @@ export default function Home() {
 
       <section className='w-full'>
         <h2 className='text-center mb-8'>Contacto</h2>
+        
         <ContactForm />
       </section>
 
