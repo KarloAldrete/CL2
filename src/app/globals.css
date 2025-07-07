@@ -3,19 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #6C8B9D;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html {
+      scroll-behavior: smooth;
+    }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Geist, Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold text-white;
+  }
+  h2 {
+    @apply text-2xl mb-10 sm:mb-16 font-bold md:text-5xl text-white;
+  }
+  h3 {
+    @apply text-lg sm:text-xl font-semibold text-white;
+  }
+  h4 {
+    @apply  text-white;
+  }
+  section {
+    @apply  mt-28 md:mt-44
+  }
+}
+
