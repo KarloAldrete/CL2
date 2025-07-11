@@ -69,19 +69,23 @@ export default function ContactForm() {
 
     return (
         // JSX del formulario, con clases de Tailwind
-        <div className='max-w-2xl p-6 bg-[#16191D] rounded-lg mx-2 sm:mx-auto sm:p-8'>
+        <div className='max-w-2xl w-full p-6 bg-[#16191D] rounded-lg mx-2 sm:mx-auto sm:p-8'>
+            <div className='flex flex-col justify-center items-center'>
+                <h3 className='text-coder-white'>¿Tienes preguntas o necesitas ayuda?</h3>
+                <p className='text-coder-grayblue mb-10'>No dudes en contactarnos, nos encantaría ayudarte.</p>
+            </div>
             <form onSubmit={handleSubmit}>
                 {/* Campo Nombre Completo */}
                 <div className='flex gap-4 justify-center items-center w-full'>
-                <div className='mb-4 w-full'>
-                    <label htmlFor='nombreCompleto' className='block text-sm font-medium text-gray-300'>Nombre/Empresa</label>
-                    <input type='text' id='nombreCompleto' name='nombreCompleto' value={formData.nombreCompleto} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25'  placeholder='Tu nombre o el de tu empresa' />
-                </div>
-                {/* Campo Correo Electrónico */}
-                <div className='mb-4 w-full'>
-                    <label htmlFor='correoElectronico' className='block text-sm font-medium text-gray-300'>Correo Electrónico</label>
-                    <input type='email' id='correoElectronico' name='correoElectronico' value={formData.correoElectronico} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25' placeholder='Dirección de correo electrónico' />
-                </div>
+                    <div className='mb-4 w-full'>
+                        <label htmlFor='nombreCompleto' className='block text-sm font-medium text-gray-300'>Nombre/Empresa</label>
+                        <input type='text' id='nombreCompleto' name='nombreCompleto' value={formData.nombreCompleto} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25' placeholder='Tu nombre o el de tu empresa' />
+                    </div>
+                    {/* Campo Correo Electrónico */}
+                    <div className='mb-4 w-full'>
+                        <label htmlFor='correoElectronico' className='block text-sm font-medium text-gray-300'>Correo Electrónico</label>
+                        <input type='email' id='correoElectronico' name='correoElectronico' value={formData.correoElectronico} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25' placeholder='Dirección de correo electrónico' />
+                    </div>
 
                 </div>
                 {/* Campo Teléfono */}
@@ -94,11 +98,7 @@ export default function ContactForm() {
                     <label htmlFor='mensajeCorto' className='block text-sm font-medium text-gray-300'>Mensaje Corto</label>
                     <textarea id='mensajeCorto' name='mensajeCorto' rows={4} value={formData.mensajeCorto} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25' placeholder='Descripción del proyecto o pregunta'></textarea>
                 </div>
-                {/* Campo Tipo de Proyecto */}
-                {/*     <div className='mb-6'>
-          <label htmlFor='tipoProyecto' className='block text-sm font-medium text-gray-300'>Tipo de Proyecto</label>
-          <input type='text' id='tipoProyecto' name='tipoProyecto' value={formData.tipoProyecto} onChange={handleInputChange} className='mt-1 block w-full rounded-md border-gray-600 shadow-sm focus:border-coder-green focus:ring focus:ring-coder-green focus:ring-opacity-50 bg-[#282D34] text-white p-2 placeholder-white placeholder-opacity-25' />
-        </div> */}
+
 
                 {/* Mensajes de estado */}
                 {submitStatus === 'success' && (
@@ -117,7 +117,7 @@ export default function ContactForm() {
                     disabled={isSubmitting} // Deshabilita el botón durante el envío
                 >
                     {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'} {/* Cambia el texto del botón */}
-                    
+
                 </button>
             </form>
         </div>

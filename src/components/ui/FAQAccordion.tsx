@@ -1,4 +1,3 @@
-// src/components/ui/FAQAccordion.tsx
 'use client';
 
 import { useState } from 'react';

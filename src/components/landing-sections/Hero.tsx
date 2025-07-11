@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Button from './ui/Button';
+import Button from '../ui/Button';
 
 export default function Hero() {
   // 0: luz-01.webp (apagado), 1: luz-02.webp (encendido)
