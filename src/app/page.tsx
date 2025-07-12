@@ -5,10 +5,7 @@ import MarcasSection from '@/components/landing-sections/MarcasSection';
 import ProcesoSection from '@/components/landing-sections/ProcesoSection';
 import ServiciosSection from '@/components/landing-sections/ServiciosSection';
 import FAQSection from '@/components/landing-sections/FAQSection';
-import {
-  IconCode, IconAi, IconMessage, IconBrain,
-  IconBrandFacebookFilled, IconBrandInstagramFilled, IconBrandYoutubeFilled, IconBrandTiktokFilled
-} from '@tabler/icons-react';
+import {IconBrandFacebookFilled, IconBrandInstagramFilled, IconBrandYoutubeFilled, IconBrandTiktokFilled} from '@tabler/icons-react';
 
 export default function Home() {
   return (

@@ -1,10 +1,10 @@
-import { proyectos } from '@/data/proyectos'; 
-import Link from 'next/link'; 
+import { proyectos } from '@/data/proyectos';
+import Link from 'next/link';
 
 const CasosPage = () => {
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col items-center">
-      <h1 className="text-center mb-12 sm:mb-20 mt-10">Nuestros Proyectos</h1> 
+      <h1 className="text-center mb-12 sm:mb-20 mt-10">Nuestros Proyectos</h1>
       <div className="flex flex-col gap-16 w-full max-w-[800px]">
 
         {proyectos.map((proyecto) => (

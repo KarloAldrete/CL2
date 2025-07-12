@@ -1,4 +1,4 @@
-import { getProyectoBySlug, proyectos, Proyecto } from '@/data/proyectos';
+import { getProyectoBySlug, proyectos } from '@/data/proyectos';
 import { notFound } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
@@ -108,7 +108,7 @@ const ProyectoPage = async ({ params }: ProyectoPageProps) => {
             <p className="text-coder-green text-sm">{testimonial_job_title}</p>
           </div>
         </div>
-        <p className=" italic">"{testimonial_text}"</p>
+        <p className="italic">"{testimonial_text}"</p>
       </div>
     </div>
   );
