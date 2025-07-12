@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
 import IconWrapper from '@/components/ui/IconWrapper';
-import { IconCode, IconTools, IconBulb, IconClock  } from '@tabler/icons-react';
+import { IconCode, IconTools, IconBulb, IconClock } from '@tabler/icons-react';
 
 interface ProyectoPageProps {
   params: {
@@ -47,7 +47,9 @@ const ProyectoPage = async ({ params }: ProyectoPageProps) => {
       <div className='grid grid-cols-1 gap-4 md:grid-cols-[auto, auto] md:grid-rows-[auto, auto] md:gap-x-14'>
         <h1 className="text-2xl sm:text-3xl font-extrabold order-1 md:row-[1/2]">{title}</h1>
         <p className="order-3 md:row-[2/3]">{project_description}</p>
-        <img src={previewUrl} alt={`Preview del proyecto ${title}`} className="rounded-lg shadow-md w-full h-auto object-cover order-2 md:row-[1/3] md:w-[250px] md:h-[auto] " />
+        <picture className='order-2 md:row-[1/3] md:w-[250px] md:h-[auto]'>
+          <img src={previewUrl} alt={`Preview del proyecto ${title}`} className="rounded-lg shadow-md w-full h-auto object-cover " />
+        </picture>
       </div>
 
 
@@ -108,7 +110,7 @@ const ProyectoPage = async ({ params }: ProyectoPageProps) => {
             <p className="text-coder-green text-sm">{testimonial_job_title}</p>
           </div>
         </div>
-        <p className="italic">"{testimonial_text}"</p>
+        <p className="italic">{testimonial_text}</p>
       </div>
     </div>
   );
